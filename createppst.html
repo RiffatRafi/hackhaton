@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Post</title>
+    <link rel="stylesheet" href="createpost.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create-post.html">Create Post</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Create Post Section -->
+    <section class="create-post">
+        <div class="container">
+            <h2>Create a New Post</h2>
+            <form action="submit-post.php" method="POST">
+                <div class="form-group">
+                    <label for="post-title">Post Title:</label>
+                    <input type="text" id="post-title" name="post-title" required placeholder="Enter your post title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-content">Post Content:</label>
+                    <textarea id="post-content" name="post-content" rows="10" required placeholder="Write your post content here..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-date">Post Date:</label>
+                    <input type="date" id="post-date" name="post-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Post</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
